@@ -1,64 +1,53 @@
-```md
+<p align="center">
+  <img src="img/switch2.jpeg?auto=format&fit=crop&w=1200&q=80" alt="Colorful dice tumbling" width="600">
+</p>
 ---
 languages: javascript, html, css
 tags: dom, timers, events, beginner, kids
 ---
 
-# js-lab-switch2-countdown-ttpr - Switch 2 Countdown Challenge
+# 🚀 Switch 2 Countdown – Coding Challenge
 
-Nintendo’s **Switch 2** officially launches at **12:01 AM on June 5 2025**.  
-Your mission: turn the starter code below into a tiny, celebratory launch-party web page.
-```
-
-```js
-// script.js (starter)
-CountDownToMario("06/05/2025 12:01 AM", "countdown");
-
-function CountDownToMario(endTime, div) {
-  /* current logic here */
-}
-```
+Nintendo’s **Switch 2** drops at **12:01 AM → June 5 2025**.  
+Starter code boots a bare timer—your job is to finish the logic and add launch-day flair.
 
 ---
 
-## What you’ll build
+## Starter files
 
-A single-page site that:
+index.html // page shell + <div id="countdown"> styles.css // red theme (tweak as you like) script.js // countdown scaffold — TODOs inside assets/ // Switch-2 banner PNG + coin.wav (optional)
 
-- shows a live, self-updating countdown (days : hrs : mins : secs)
-- swaps to a launch message when the clock hits zero
-- feels a little “Nintendo” ✨
+Open **script.js** to see the commented TODO steps.
 
 ---
 
-## Tasks
+## Requirements
 
-| #   | Requirement                                                                                                                                               | Hints                                                  |
-| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| 1   | **Refactor** `CountDownToMario` so each unit is two digits (`04 hrs`, not `4 hrs`).                                                                       | `String.prototype.padStart`                            |                                       |
-| 2   | **Launch state**: when the countdown reaches 0, replace the timer with **“Switch 2 is out! 🎉”** and swap the page background to a fun image or gradient. | Detect `distance <= 0`                                 |
-| 3   | **Dynamic date**: let the release date be set from HTML via a `data-release` attribute on the `<div id="countdown">`.                                     | `document.getElementById('countdown').dataset.release` |
-| 4 (Optional)   | **(Stretch)** Play a short coin-collect sound once when the timer hits zero.                                                                              | `<audio>` element + `.play()`                          |
+| # | Feature | Pass criteria |
+|---|---------|---------------|
+| 1 | **Live countdown** | Timer updates every second (days : hrs : mins : secs). |
+| 2 | **Two-digit units** | `04 hrs` → not `4 hrs` &nbsp;`padStart()` hint included. |
+| 3 | **Launch state** | At zero: text flips to **“Switch 2 is out! 🎉”** and page style changes (background, confetti, etc.). |
+| 4 | **Dynamic date** | Timer reads `data-release` on the countdown `<div>` (no hard-coding in JS). |
+| 5 | **(Stretch)** Sound | Play `coin.wav` once on launch. |
 
 ---
 
-## Getting started
+## Quick start
 
-1. **Fork** this repository.
-2. **Clone** your fork locally.
-3. Open `index.html` in the browser (keep DevTools console open).
-4. Work in `script.js` and `styles.css`; commit early & often.
-5. **Push** and open a Pull Request when finished.
+1. **Fork & clone** this repo.  
+2. Open `index.html` in your browser + `script.js` in your editor.  
+3. Follow the numbered TODO comments—implement, save, refresh, repeat.  
+4. Commit early, push when ready, and open a Pull Request.
 
 ---
 
 ## Submission checklist
 
-- [ ] Countdown displays and updates every second.
-- [ ] Digits are always two characters.
-- [ ] Post-launch message & background change trigger properly.
-- [ ] No uncaught console errors.
-- [ ] README includes a screenshot of the final page.
+- [ ] Countdown visible & accurate.  
+- [ ] Units padded to two digits.  
+- [ ] Launch message + style swap trigger.  
+- [ ] No uncaught console errors.  
+- [ ] Screenshot added to README.  
 
-Have fun—and set your alarms for midnight!
-
+Happy coding—set your alarms for midnight! 🌟
